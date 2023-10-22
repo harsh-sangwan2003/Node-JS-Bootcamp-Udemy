@@ -6,11 +6,15 @@ A quick guide to my Project ->
 
 ## Tools Used
 
-- React JS
+- Node JS
 - JavaScript
-- JSX
-- CSS
-- React Libraries
+- Core Modules
+- Own Server
+- Express JS
+- Express Server
+- JWT
+- Mongo DB
+- Mongoose
 
 ## Available Scripts
 
