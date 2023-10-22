@@ -1,7 +1,18 @@
 const fs = require('fs');
 
-const buffer = fs.readFileSync('output.txt');
+// Blocking, synchronous way
+// const buffer = fs.readFileSync('output.txt');
+// const output = "Adding some extra content. " + buffer;
+// fs.writeFileSync('output.txt', output);
 
-const output = "Adding some extra content. " + buffer;
+// Non-Blokcing, asynchronous way
+fs.readFile('output.txt', 'utf-8', (err, data) => {
 
-fs.writeFileSync('output.txt',output);
+    if (err)
+        console.log(err);
+
+    else
+        console.log(data);
+})
+
+console.log("Will read file");
